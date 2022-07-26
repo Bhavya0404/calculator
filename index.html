@@ -1,0 +1,61 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@600&family=Signika:wght@300;400;500;600&family=Varela+Round&display=swap" rel="stylesheet">
+    <title>Calculator</title>
+</head>
+<body>
+    <div class="container">
+        <div class="calculator">
+            <div class="input-field">
+                <input multiple type="text" name="numbers" id="data" >
+            </div>
+            <div class="numbers">
+                <div class="button-container">
+                    <div class="button-row">
+                        <div class="button green" onClick="clearNo()">AC</div>
+                        <div class="button green" onClick="changeSign()">+/-</div>
+                        <div class="button green" onClick="percentNo()">%</div>
+                        <div class="button red" onClick="divideNo()">/</div>
+                    </div>
+
+                    <div class="button-row">
+                        <div class="button white" id="seven" onclick="sevenNo()" >7</div>
+                        <div class="button white" id="eight" onclick="eightNo()">8</div>
+                        <div class="button white" id="nine" onclick="nineNo()">9</div>
+                        <div class="button red" onclick="multiplyNo()">*</div>
+                    </div>
+
+                    <div class="button-row">
+                        <div class="button white" id="four" onclick="fourNo()">4</div>
+                        <div class="button white" id="five" onclick="fiveNo()">5</div>
+                        <div class="button white" id="six" onclick="sixNo()">6</div>
+                        <div class="button red" onclick="minusNo()">-</div>
+                    </div>
+
+                    <div class="button-row">
+                        <div class="button white" id="one" onclick="oneNo()">1</div>
+                        <div class="button white" id="two" onclick="twoNo()">2</div>
+                        <div class="button white" id="three" onclick="threeNo()">3</div>
+                        <div class="button red" id="plus" onclick="plusNo()">+</div>
+                    </div>
+
+                    <div class="button-row">
+                        <div class="button white" onclick="backspace()">C</div>
+                        <div class="button white" id="zero" onclick="zeroNo()">0</div>
+                        <div class="button white" id="decimal" onClick="decimalNo()">.</div>
+                        <div class="button red" id="equal" onclick="equalNo()">=</div>
+                    </div>
+                </div>
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <script src="home.js"></script>
+</body>
+</html>
